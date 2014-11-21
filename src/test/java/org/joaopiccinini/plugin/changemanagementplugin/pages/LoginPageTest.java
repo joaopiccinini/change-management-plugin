@@ -31,7 +31,7 @@ public class LoginPageTest {
 	public void shouldAuthenticateInLoginPage() {
 		LoginPage loginPage = initElements(driver, LoginPage.class);
 
-		URL url = this.getClass().getResource("/pages/login.html");
+		URL url = this.getClass().getResource("/pages/login-page.html");
 		loginPage.open(url).authenticate("1", "2");
 
 		assertThat(loginPage.getTitle(), is(equalTo("Pagina login")));
