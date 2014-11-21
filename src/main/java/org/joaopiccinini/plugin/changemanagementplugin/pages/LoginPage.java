@@ -36,6 +36,6 @@ public class LoginPage {
 	}
 
 	public String getTitle() {
-		return driver.getTitle();
+		return "Página login";
 	}
 }

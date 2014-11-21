@@ -34,6 +34,6 @@ public class LoginPageTest {
 		URL url = this.getClass().getResource("/pages/login-page.html");
 		loginPage.open(url).authenticate("1", "2");
 
-		assertThat(loginPage.getTitle(), is(equalTo("Pagina login")));
+		assertThat(driver.getTitle(), is(equalTo(loginPage.getTitle())));
 	}
 }
