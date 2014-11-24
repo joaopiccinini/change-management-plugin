@@ -7,25 +7,9 @@ import static org.openqa.selenium.support.PageFactory.initElements;
 
 import java.net.URL;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LoginPageTest {
-
-	private WebDriver driver;
-
-	@Before
-	public void initializeDriver() {
-		driver = new FirefoxDriver();
-	}
-
-	@After
-	public void finalizeDriver() {
-		driver.close();
-	}
+public class LoginPageTest extends FirefoxDriverTest {
 
 	@Test
 	public void shouldAuthenticateInLoginPage() {
