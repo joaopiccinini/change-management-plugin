@@ -1,0 +1,8 @@
+language: java
+jdk:
+  - oraclejdk7
+script: mvn install && mvn test && mvn site
+env:
+  global:
+    - secure: KIQGx8q6BQBOJ1a3f3Q+P1C5B5j2G00Xmy8ca9ypkPwYYjynPocWGpZ2uFDJwjXgDnzWwp6AZRLjGQA3S89/qX503Ebv3jvf/DUQJFVuZPKiCfBb3pBMedQIEANMDSL6/HNqLGYOVGTUj6shvWo44Qn//Zi7sOUOW+b2jI38ZR4=
+    - secure: eFiAMzF99zpCVhL2poVAjH5RvEZ9MBt8J5+sEKEkFAP5g3HK1lJ7KookRC9herKEE32x63Fv2tce8h4Ut7NXxtznNHSBcsEevQutcacwAV3g1mx27WGjXRSDNBO93mxOZcuGZzQdT/nG6DpQXgrF1DVdmXJi9xBZc3vZINHJvjE=
