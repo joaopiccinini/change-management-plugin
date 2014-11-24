@@ -2,7 +2,8 @@ language: java
 jdk:
   - oraclejdk7
 script: mvn install && mvn test && mvn site
-env:
-  global:
-    - secure: KIQGx8q6BQBOJ1a3f3Q+P1C5B5j2G00Xmy8ca9ypkPwYYjynPocWGpZ2uFDJwjXgDnzWwp6AZRLjGQA3S89/qX503Ebv3jvf/DUQJFVuZPKiCfBb3pBMedQIEANMDSL6/HNqLGYOVGTUj6shvWo44Qn//Zi7sOUOW+b2jI38ZR4=
-    - secure: eFiAMzF99zpCVhL2poVAjH5RvEZ9MBt8J5+sEKEkFAP5g3HK1lJ7KookRC9herKEE32x63Fv2tce8h4Ut7NXxtznNHSBcsEevQutcacwAV3g1mx27WGjXRSDNBO93mxOZcuGZzQdT/nG6DpQXgrF1DVdmXJi9xBZc3vZINHJvjE=
+addons:
+  sauce_connect:
+    username: joaopiccinini
+    acess_key:
+      secure: "mE55LxBqwrQD0uAJCzE3mcDwMXGkB970Xt/aJAK+Y7z8PA2u9qPOWQDBSjk+BILhEw0rzhorcSPRAT2IZPdu5BRUY0H7NNc/I3dN072k2mD7LWXs+33cziSnuWn4t4j1ufaUgZC8qSAIwwk6DxCTarvctvZFkJiaX7UVeYQ1nSc="
