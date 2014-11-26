@@ -16,5 +16,6 @@ public class FirefoxDriverTest {
 	@After
 	public void finalizeDriver() {
 		driver.close();
+		driver.quit();
 	}
 }
