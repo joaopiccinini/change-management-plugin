@@ -28,11 +28,10 @@ public class LoginPage {
 		return this;
 	}
 
-	public LoginPage authenticate(String user, String password) {
+	public void authenticate(String user, String password) {
 		cdUsuario.sendKeys(user);
 		cdSenha.sendKeys(password);
 		btnLogin.click();
-		return this;
 	}
 
 	public String getTitle() {
